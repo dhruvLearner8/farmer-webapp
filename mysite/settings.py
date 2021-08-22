@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,9 @@ SECRET_KEY = 'django-insecure-(=c-s$69lk0q4-d0+g+((k_@+_lo)hi+b$sg7z%7+qsnm#gbyb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'krishi-biz.herokuapp.com'
+]
 
 
 # Application definition
@@ -77,10 +80,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
-        'NAME' :'hackathon',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost'
+        'NAME' :'das6mj4ur1c6nl',
+        'USER':'riogvdzgvtkvrj',
+        'PASSWORD':'a9c1da2021e85cea2aa58a1f91d57be6a58e26e76bb3b97c43ffc1d1c5d985ac',
+        'HOST':'ec2-54-236-234-167.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -134,3 +138,4 @@ STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+django_heroku.settings(locals())
