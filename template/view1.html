@@ -1,0 +1,47 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>View</title>
+</head>
+<style>
+    .checked {
+  color: orange;
+}
+    </style>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="row">
+          <div class="col-sm-4">
+              <img src="{% static 'images/farmer.jpg' %}" style="margin: 20px 100px 5px 5px;" >
+             
+              <img src="{% static 'images/onions.jpg' %}" style="margin: 20px 100px 5px 5px;">
+          </div>
+         
+          <div class="col-sm-8">
+              <h3>Name-  Hasmukh mehta </h3>
+              <h4>Product To sell  -  Onions</h4>
+              <h4>Quantity - 20 Kgs</h4>
+              <h4>Price - 40 per kg</h4>
+              <h4>Harvested date - 5/8/2021</h4>
+              <h4>Location - sola, Ahmedabad, Gujarat</h4>
+
+              <h5>Rating </h5>- <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+             
+              
+          </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

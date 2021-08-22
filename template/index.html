@@ -1,0 +1,97 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles/style3.css' %}">
+</head>
+<body>
+    <section id="my-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#">KRISHI-BIZ</a>  
+            <!-- put symbol here -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#">About</a>
+                <div class="dropdown nav-item nav-link" class="dduser">  
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Buy-Product
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">As Consumer</a>
+                      <a class="dropdown-item" href="#">As Company</a>
+                      <a class="dropdown-item" href="#">AS Retailer</a>
+                    </div>
+                  </div>
+                <a class="nav-item nav-link active" href="#">Services</a>
+                <a class="nav-item nav-link active" href="#">Galllary</a>
+                <a class="nav-item nav-link active" href="https://www.canva.com/design/DAEnwNkHhV8/qKH6gCd0yGsVTfNUKbF6Kw/view">Sell-Product</a>
+                <!-- <a class="nav-item nav-link active" href="#">Contact us</a> --> -->
+              </div>
+            </div>
+          </nav>
+
+          <img class= "model" src="{% static 'images/Krishi-Biz.png' %}" alt="">
+    
+
+          <!-- <img src="images/p4.png" alt="my-image"> -->
+         
+    </section>
+
+    <section id="search_farmer">
+        <div class="sec2-search">
+            <h1>Search farmer for your product</h1>
+            <div class="input-prod">
+                <input class="search-prod"  type="text" placeholder="Search-Product">
+                
+                <button class="submit-prod" ><a href="submit" >Submit</a></button>
+            </div>
+            
+        </div>
+        
+
+    </section>
+
+   
+
+    
+        <footer id="footer">
+            <div class="container">
+              <h3>KRISHI-BIZ</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <div class="copyright">
+                &copy; Copyright <strong><span>Artistic-Amigos</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+            
+              </div>
+            </div>
+          </footer><!-- End Footer -->
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

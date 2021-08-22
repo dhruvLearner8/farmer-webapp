@@ -1,0 +1,67 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style3.css'%} ">
+</head>
+<body>
+    
+
+    <section id="my-nav-2">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">KRISHI-BIZ</a>  
+            <!-- put symbol here -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#">About</a>
+                <div class="dropdown nav-item nav-link" class="dduser">  
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Buy-Product
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">As Consumer</a>
+                      <a class="dropdown-item" href="#">As Company</a>
+                      <a class="dropdown-item" href="#">AS Retailer</a>
+                    </div>
+                  </div>
+                <a class="nav-item nav-link active" href="#">Services</a>
+                <a class="nav-item nav-link active" href="#">Galllary</a>
+                <a class="nav-item nav-link active" href="#">Sell-Product</a>
+                <!-- <a class="nav-item nav-link active" href="#">Contact us</a> --> -->
+              </div>
+            </div>
+          </nav>
+          <!-- <img src="images/p4.png" alt="my-image"> -->
+     </section>
+
+    <a href="view1">
+     <img class="prod-img" src="{% static 'images/products.png' %} ">
+    </a>
+     <!-- <section id="product-list">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+
+                Box-1
+              </div>
+              <div class="col-sm">
+                Box-2
+              </div>
+              <div class="col-sm">
+                Box-3
+              </div>
+            </div>
+          </div>
+     </section> -->
+
+</body>
+</html>
