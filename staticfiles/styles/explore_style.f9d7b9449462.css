@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*Hero section*/
+#hero{
+    background-image: url("asset/bench-accounting-nvzvOPQW0gc-unsplash.ca4263d644db.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+#hero h1{
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color:crimson;
+    animation: text_revel 1s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.3s;
+}
+#hero .hero-row:nth-child(2){
+    margin-right: 20%;
+}
+#hero p{
+    font-size: 1.2rem;
+}
+#hero .cta{
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    padding: 15px 40px;
+
+    color:crimson;
+    font-weight: 600;
+    border:2px solid crimson;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    transition-property: background-color,color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: crimson;
+}
+/*End Hero section*/
+
+/*key frames section*/
+/*End key frame section*/
